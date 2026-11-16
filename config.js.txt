@@ -1,2 +1,0 @@
-﻿// Werte aus Supabase: Project Settings > Data API
-window.DARTS_CONFIG={SUPABASE_URL:"https://epjngxmirpxsbfnasovr.supabase.co",SUPABASE_ANON_KEY:"sb_publishable_dLj0i5eKb7djnOtqL_RTxQ_1fTfVXs0"};
