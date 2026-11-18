@@ -11,4 +11,33 @@ onSnapshot(configRef,snap=>{if(snap.exists())config=snap.data();renderTeams();wa
 $('#login').onsubmit=async e=>{e.preventDefault();try{let r=await signInWithEmailAndPassword(auth,$('#email').value.trim(),$('#password').value);$('#password').value='';if(r.user.uid!==ADMIN_UID)await signOut(auth)}catch{$('#loginMsg').textContent='Anmeldung fehlgeschlagen';$('#password').value=''}};$('#logout').onclick=()=>signOut(auth);
 $('#entryForm').onsubmit=async e=>{e.preventDefault();let d=+$('#day').value,n=$('#player').value,a=read('.sa'),b=read('.da');if(!a&&!b)return $('#entryMsg').textContent='AVG eingeben';T.entries=T.entries.filter(x=>!(x.day===d&&x.player===n));let q={day:d,player:n,h180:+$('#h180').value||0,finish:+$('#finish').value||0};if(a)T.entries.push({...q,type:'Einzel',avg:a});if(b)T.entries.push({...q,type:'Doppel',avg:b});await saveTeam();$('#entryMsg').textContent='Gespeichert in '+T.name};$('#deleteDay').onclick=async()=>{let d=+$('#day').value,n=$('#player').value;if(confirm(`Spieltag ${d} von ${n} in ${T.name} löschen?`)){T.entries=T.entries.filter(x=>!(x.day===d&&x.player===n));await saveTeam()}};
 $('#addTeam').onclick=async()=>{let name=$('#newTeam').value.trim();if(!name)return;if(config.teams.length>=3)return alert('Maximal drei Mannschaften');let id='team_'+Date.now();config.teams.push({id,name});config.activeTeamId=id;await saveConfig();await setDoc(teamRef(id),{name,players:[],entries:[],updatedAt:serverTimestamp()});$('#newTeam').value=''};$('#renameBtn').onclick=async()=>{let name=$('#renameTeam').value.trim();if(!name)return;T.name=name;let x=config.teams.find(x=>x.id===config.activeTeamId);if(x)x.name=name;await Promise.all([saveTeam(),saveConfig()])};$('#deleteTeam').onclick=async()=>{if(config.teams.length<=1)return alert('Mindestens eine Mannschaft muss bleiben');if(!confirm(`Mannschaft „${T.name}“ und alle Daten endgültig löschen?`))return;let id=config.activeTeamId;config.teams=config.teams.filter(x=>x.id!==id);config.activeTeamId=config.teams[0].id;await deleteDoc(teamRef(id));await saveConfig()};$('#addPlayer').onclick=async()=>{let n=$('#newPlayer').value.trim();if(!n||T.players.includes(n))return;T.players.push(n);T.players.sort((a,b)=>a.localeCompare(b));await saveTeam();$('#newPlayer').value=''};$('#removePlayerBtn').onclick=async()=>{let n=$('#removePlayer').value;if(!n||!confirm(`Spieler „${n}“ und alle alten Daten aus ${T.name} löschen?`))return;T.players=T.players.filter(x=>x!==n);T.entries=T.entries.filter(x=>x.player!==n);await saveTeam()};$('#clearTeamData').onclick=async()=>{if(!confirm(`ALLE Ergebnisse von „${T.name}“ endgültig löschen? Spieler bleiben erhalten.`))return;T.entries=[];await saveTeam();$('#manageMsg').textContent='Alle alten Ergebnisse wurden gelöscht'};
+$('#backupFirestore').onclick=async()=>{
+  if(!admin)return;
+  const b=$('#backupFirestore'),m=$('#backupMsg');
+  b.disabled=true;m.textContent='Backup wird erstellt...';
+  try{
+    const cfgSnap=await getDoc(configRef);
+    const cfgData=cfgSnap.exists()?cfgSnap.data():config;
+    const teams=[];
+    for(const meta of (cfgData.teams||[])){
+      const snap=await getDoc(teamRef(meta.id));
+      teams.push({id:meta.id,name:meta.name,exists:snap.exists(),data:snap.exists()?snap.data():null});
+    }
+    const backup={
+      format:'Dartarossa-Firestore-Backup',
+      version:'V16',
+      createdAt:new Date().toISOString(),
+      firebaseProject:'dsv-reutlingen-darts',
+      config:cfgData,
+      teams
+    };
+    const blob=new Blob([JSON.stringify(backup,null,2)],{type:'application/json'});
+    const url=URL.createObjectURL(blob),a=document.createElement('a');
+    const stamp=new Date().toISOString().replace(/[:.]/g,'-');
+    a.href=url;a.download=`Dartarossa_Firestore_Backup_V16_${stamp}.json`;
+    document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+    m.textContent=`Backup erstellt: ${teams.length} Mannschaft(en).`;
+  }catch(err){m.textContent='Backup fehlgeschlagen: '+err.message;}
+  finally{b.disabled=false;}
+};
 if('serviceWorker'in navigator)navigator.serviceWorker.register('./sw.js?v=16');renderTeams();watchTeam();render();
