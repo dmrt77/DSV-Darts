@@ -1,0 +1,11 @@
+{
+  "id": "./dartarossa-v19-admin",
+  "name": "Dartarossa V19 Admin",
+  "short_name": "Dartarossa Admin",
+  "start_url": "./admin.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f3f4f6",
+  "theme_color": "#111827",
+  "icons": []
+}
