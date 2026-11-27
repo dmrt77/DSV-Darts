@@ -4,22 +4,14 @@ name: 3K-Darts automatisch synchronisieren
   workflow_dispatch:
   schedule:
     - cron: '17 */6 * * *'
-
 permissions:
   contents: write
-
-concurrency:
-  group: 3k-sync
-  cancel-in-progress: false
-
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Repository laden
-        uses: actions/checkout@v4
-      - name: Node.js einrichten
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '24'
       - name: 3K-Daten abrufen und berechnen
@@ -29,9 +21,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A data/
-          if git diff --cached --quiet; then
-            echo "Keine Änderungen"
-            exit 0
-          fi
+          if git diff --cached --quiet; then echo "Keine Änderungen"; exit 0; fi
           git commit -m "3K-Daten automatisch aktualisiert"
           git push
