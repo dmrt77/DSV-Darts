@@ -30,13 +30,15 @@ jobs:
  
       - name: Aktualisierte Daten veröffentlichen
         run: |
-          if git diff --quiet -- data/3k-sync.json; then
+                - name: Aktualisierte Daten veröffentlichen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data/
+          if git diff --cached --quiet; then
             echo "Keine Änderungen"
             exit 0
           fi
- 
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/3k-sync.json
+          
           git commit -m "3K-Daten automatisch aktualisiert"
           git push
