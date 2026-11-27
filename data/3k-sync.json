@@ -1,9 +1,10 @@
 {
-  "schema": 1,
+  "schema": 2,
+  "key": "dartarossa",
   "eventId": 6637,
   "phaseId": 10217,
   "teamName": "1.DSV Reutlingen Dartarossa",
-  "updatedAt": "2026-11-27T08:53:29.966Z",
+  "updatedAt": "2026-11-27T09:37:10.140Z",
   "seasonAvg": 64.104615336022,
   "matches": [
     {
@@ -22,8 +23,7 @@
       "oppAvg": 58.769846659851815,
       "diff": -1.3875241483997627,
       "result": "5:7",
-      "legs": "22:26",
-      "calculation": "Mittelwert der Match-AVGs (score*3/darts)"
+      "legs": "22:26"
     },
     {
       "day": 2,
@@ -41,8 +41,7 @@
       "oppAvg": 67.72133191060679,
       "diff": -1.4506447135816956,
       "result": "5:7",
-      "legs": "22:30",
-      "calculation": "Mittelwert der Match-AVGs (score*3/darts)"
+      "legs": "22:30"
     },
     {
       "day": 3,
@@ -60,8 +59,7 @@
       "oppAvg": 66.96020283146522,
       "diff": -0.21273109688424086,
       "result": "4:8",
-      "legs": "22:28",
-      "calculation": "Mittelwert der Match-AVGs (score*3/darts)"
+      "legs": "22:28"
     },
     {
       "day": 4,
@@ -79,8 +77,7 @@
       "oppAvg": 64.24204288884887,
       "diff": 2.505609411322496,
       "result": "6:6",
-      "legs": "24:22",
-      "calculation": "Mittelwert der Match-AVGs (score*3/darts)"
+      "legs": "24:22"
     },
     {
       "day": 5,
@@ -98,8 +95,7 @@
       "oppAvg": 67.07061583089462,
       "diff": 0.9834480528038512,
       "result": "6:6",
-      "legs": "25:22",
-      "calculation": "Mittelwert der Match-AVGs (score*3/darts)"
+      "legs": "25:22"
     },
     {
       "day": 6,
@@ -117,8 +113,7 @@
       "oppAvg": 57.3429991548907,
       "diff": 2.082495234313299,
       "result": "7:5",
-      "legs": "27:21",
-      "calculation": "Mittelwert der Match-AVGs (score*3/darts)"
+      "legs": "27:21"
     },
     {
       "day": 7,
