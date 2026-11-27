@@ -1,11 +1,64 @@
 {
-  "schema": 2,
+  "schema": 3,
   "key": "dartarossa",
   "eventId": 6637,
   "phaseId": 10217,
+  "groupId": 95709,
   "teamName": "1.DSV Reutlingen Dartarossa",
-  "updatedAt": "2026-11-27T09:37:28.250Z",
+  "updatedAt": "2026-11-27T10:11:17.207Z",
   "seasonAvg": 64.104615336022,
+  "leagueTeams": [
+    {
+      "name": "DC Urbach 2",
+      "played": 5,
+      "seasonAvg": 66.85888242921712
+    },
+    {
+      "name": "SG Reichenbach 1 (1)",
+      "played": 5,
+      "seasonAvg": 65.91148097757883
+    },
+    {
+      "name": "DFO Eagle One",
+      "played": 4,
+      "seasonAvg": 65.19316485834945
+    },
+    {
+      "name": "1.DSV Reutlingen Dartarossa",
+      "played": 6,
+      "seasonAvg": 64.104615336022
+    },
+    {
+      "name": "TSV Oberensingen Jäger`s Knights 1 (1)",
+      "played": 6,
+      "seasonAvg": 63.62544498876076
+    },
+    {
+      "name": "DC OA Lauffen 1",
+      "played": 6,
+      "seasonAvg": 63.459632848050525
+    },
+    {
+      "name": "MTV Ludwigsburg Darts 1",
+      "played": 6,
+      "seasonAvg": 63.09076642252641
+    },
+    {
+      "name": "TuS 1899 Freiberg",
+      "played": 6,
+      "seasonAvg": 61.96996221450048
+    },
+    {
+      "name": "SV Salamander Kornwestheim 1",
+      "played": 6,
+      "seasonAvg": 61.95395016142399
+    },
+    {
+      "name": "TSG-HN B-Seite 1",
+      "played": 6,
+      "seasonAvg": 60.010124125526936
+    }
+  ],
   "matches": [
     {
       "day": 1,
