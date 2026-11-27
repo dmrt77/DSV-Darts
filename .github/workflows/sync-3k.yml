@@ -1,6 +1,6 @@
 name: 3K-Darts automatisch synchronisieren
  
-on:
+"on":
   workflow_dispatch:
   schedule:
     - cron: '17 */6 * * *'
