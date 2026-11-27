@@ -30,7 +30,7 @@ jobs:
  
       - name: Aktualisierte Daten veröffentlichen
         run: |
-                - name: Aktualisierte Daten veröffentlichen
+      - name: Aktualisierte Daten veröffentlichen
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
