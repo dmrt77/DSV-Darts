@@ -6,6 +6,9 @@ name: 3K-Darts automatisch synchronisieren
     - cron: '17 */6 * * *'
 permissions:
   contents: write
+concurrency:
+  group: 3k-sync
+  cancel-in-progress: false
 jobs:
   sync:
     runs-on: ubuntu-latest
