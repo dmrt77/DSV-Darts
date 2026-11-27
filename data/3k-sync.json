@@ -1,11 +1,10 @@
 {
-  "schema": 3,
+  "schema": 4,
   "key": "dartarossa",
   "eventId": 6637,
   "phaseId": 10217,
-  "groupId": 95709,
   "teamName": "1.DSV Reutlingen Dartarossa",
-  "updatedAt": "2026-11-27T10:11:17.207Z",
+  "updatedAt": "2026-11-27T10:32:50.531Z",
   "seasonAvg": 64.104615336022,
   "leagueTeams": [
     {
@@ -69,14 +68,12 @@
       "opponent": "TSG-HN B-Seite 1",
       "status": "FINISH",
       "lastUpdate": "2026-09-19T20:29:16",
-      "games": 12,
       "homeAvg": 58.769846659851815,
       "awayAvg": 57.38232251145205,
       "ownAvg": 57.38232251145205,
       "oppAvg": 58.769846659851815,
       "diff": -1.3875241483997627,
-      "result": "5:7",
-      "legs": "22:26"
+      "result": "5:7"
     },
     {
       "day": 2,
@@ -87,14 +84,12 @@
       "opponent": "DC Urbach 2",
       "status": "FINISH",
       "lastUpdate": "2026-09-26T19:30:14",
-      "games": 12,
       "homeAvg": 67.72133191060679,
       "awayAvg": 66.2706871970251,
       "ownAvg": 66.2706871970251,
       "oppAvg": 67.72133191060679,
       "diff": -1.4506447135816956,
-      "result": "5:7",
-      "legs": "22:30"
+      "result": "5:7"
     },
     {
       "day": 3,
@@ -105,14 +100,12 @@
       "opponent": "DFO Eagle One",
       "status": "FINISH",
       "lastUpdate": "2026-10-17T20:14:07",
-      "games": 12,
       "homeAvg": 66.96020283146522,
       "awayAvg": 66.74747173458098,
       "ownAvg": 66.74747173458098,
       "oppAvg": 66.96020283146522,
       "diff": -0.21273109688424086,
-      "result": "4:8",
-      "legs": "22:28"
+      "result": "4:8"
     },
     {
       "day": 4,
@@ -123,14 +116,12 @@
       "opponent": "TuS 1899 Freiberg",
       "status": "FINISH",
       "lastUpdate": "2026-10-31T19:27:32",
-      "games": 12,
       "homeAvg": 66.74765230017137,
       "awayAvg": 64.24204288884887,
       "ownAvg": 66.74765230017137,
       "oppAvg": 64.24204288884887,
       "diff": 2.505609411322496,
-      "result": "6:6",
-      "legs": "24:22"
+      "result": "6:6"
     },
     {
       "day": 5,
@@ -141,14 +132,12 @@
       "opponent": "TSV Oberensingen Jäger`s Knights 1 (1)",
       "status": "FINISH",
       "lastUpdate": "2026-11-21T20:13:42",
-      "games": 12,
       "homeAvg": 68.05406388369848,
       "awayAvg": 67.07061583089462,
       "ownAvg": 68.05406388369848,
       "oppAvg": 67.07061583089462,
       "diff": 0.9834480528038512,
-      "result": "6:6",
-      "legs": "25:22"
+      "result": "6:6"
     },
     {
       "day": 6,
@@ -159,14 +148,12 @@
       "opponent": "SV Salamander Kornwestheim 1",
       "status": "FINISH",
       "lastUpdate": "2026-11-21T20:33:28",
-      "games": 12,
       "homeAvg": 57.3429991548907,
       "awayAvg": 59.425494389204,
       "ownAvg": 59.425494389204,
       "oppAvg": 57.3429991548907,
       "diff": 2.082495234313299,
-      "result": "7:5",
-      "legs": "27:21"
+      "result": "7:5"
     },
     {
       "day": 7,

@@ -1,6 +1,256 @@
 {
   "schema": 4,
-  "teamName": "Big Six",
-  "matches": [],
-  "leagueTeams": []
+  "key": "bigSix",
+  "eventId": 6639,
+  "phaseId": 10219,
+  "teamName": "1.DSV Reutlingen Big Six",
+  "updatedAt": "2026-11-27T10:33:07.197Z",
+  "seasonAvg": 50.31623823593824,
+  "leagueTeams": [
+    {
+      "name": "DC Wolfsölden 5 (1)",
+      "played": 6,
+      "seasonAvg": 60.27036298497759
+    },
+    {
+      "name": "TSV Korntal 1",
+      "played": 4,
+      "seasonAvg": 59.17088880732672
+    },
+    {
+      "name": "TV Unterboihingen 1 Turtles",
+      "played": 5,
+      "seasonAvg": 56.463431527813704
+    },
+    {
+      "name": "DFO Bat Four",
+      "played": 5,
+      "seasonAvg": 55.00729852303105
+    },
+    {
+      "name": "Jägerstüble",
+      "played": 5,
+      "seasonAvg": 54.228771537877435
+    },
+    {
+      "name": "Blackout´s 1",
+      "played": 5,
+      "seasonAvg": 53.77205290588002
+    },
+    {
+      "name": "SDC Wire Kings 1",
+      "played": 5,
+      "seasonAvg": 53.735928659825355
+    },
+    {
+      "name": "SG Reichenbach 2",
+      "played": 4,
+      "seasonAvg": 52.72459421540656
+    },
+    {
+      "name": "1.DSV Reutlingen Big Six",
+      "played": 5,
+      "seasonAvg": 50.31623823593824
+    }
+  ],
+  "matches": [
+    {
+      "day": 1,
+      "roundId": 94255,
+      "matchId": 812148,
+      "home": "1.DSV Reutlingen Big Six",
+      "away": "DC Wolfsölden 5 (1)",
+      "opponent": "DC Wolfsölden 5 (1)",
+      "status": "FINISH",
+      "lastUpdate": "2026-10-03T07:36:56",
+      "homeAvg": 48.38661083396513,
+      "awayAvg": 58.197118912143246,
+      "ownAvg": 48.38661083396513,
+      "oppAvg": 58.197118912143246,
+      "diff": -9.810508078178117,
+      "result": "0:12"
+    },
+    {
+      "day": 2,
+      "roundId": 94256,
+      "matchId": 812153,
+      "home": "1.DSV Reutlingen Big Six",
+      "away": "SDC Wire Kings 1",
+      "opponent": "SDC Wire Kings 1",
+      "status": "FINISH",
+      "lastUpdate": "2026-09-26T19:53:55",
+      "homeAvg": 49.40965279043841,
+      "awayAvg": 51.15685859819617,
+      "ownAvg": 49.40965279043841,
+      "oppAvg": 51.15685859819617,
+      "diff": -1.7472058077577657,
+      "result": "6:6"
+    },
+    {
+      "day": 3,
+      "roundId": 94257,
+      "matchId": 812158,
+      "home": "1.DSV Reutlingen Big Six",
+      "away": "SG Reichenbach 2",
+      "opponent": "SG Reichenbach 2",
+      "status": "FINISH",
+      "lastUpdate": "2026-10-17T20:36:04",
+      "homeAvg": 48.52898997033298,
+      "awayAvg": 52.460274257536945,
+      "ownAvg": 48.52898997033298,
+      "oppAvg": 52.460274257536945,
+      "diff": -3.9312842872039653,
+      "result": "4:8"
+    },
+    {
+      "day": 4,
+      "roundId": 94258,
+      "matchId": 812166,
+      "home": "Jägerstüble",
+      "away": "1.DSV Reutlingen Big Six",
+      "opponent": "Jägerstüble",
+      "status": "FINISH",
+      "lastUpdate": "2026-10-31T19:32:22",
+      "homeAvg": 51.13899555864353,
+      "awayAvg": 53.07091515522284,
+      "ownAvg": 53.07091515522284,
+      "oppAvg": 51.13899555864353,
+      "diff": 1.9319195965793128,
+      "result": "6:6"
+    },
+    {
+      "day": 5,
+      "status": "OFFEN"
+    },
+    {
+      "day": 6,
+      "roundId": 94260,
+      "matchId": 812173,
+      "home": "1.DSV Reutlingen Big Six",
+      "away": "TSV Korntal 1",
+      "opponent": "TSV Korntal 1",
+      "status": "FINISH",
+      "lastUpdate": "2026-11-21T20:45:40",
+      "homeAvg": 52.18502242973184,
+      "awayAvg": 58.87142713759084,
+      "ownAvg": 52.18502242973184,
+      "oppAvg": 58.87142713759084,
+      "diff": -6.686404707859005,
+      "result": "5:7"
+    },
+    {
+      "day": 7,
+      "roundId": 94261,
+      "matchId": 812180,
+      "home": "1.DSV Reutlingen Big Six",
+      "away": "DFO Bat Four",
+      "opponent": "DFO Bat Four",
+      "status": "OPEN",
+      "lastUpdate": "2026-10-06T19:42:01"
+    },
+    {
+      "day": 8,
+      "roundId": 94262,
+      "matchId": 812184,
+      "home": "TV Unterboihingen 1 Turtles",
+      "away": "1.DSV Reutlingen Big Six",
+      "opponent": "TV Unterboihingen 1 Turtles",
+      "status": "OPEN",
+      "lastUpdate": "2026-09-10T16:39:36"
+    },
+    {
+      "day": 9,
+      "roundId": 94263,
+      "matchId": 812188,
+      "home": "1.DSV Reutlingen Big Six",
+      "away": "Blackout´s 1",
+      "opponent": "Blackout´s 1",
+      "status": "OPEN",
+      "lastUpdate": "2026-07-29T12:46:27"
+    },
+    {
+      "day": 10,
+      "roundId": 94264,
+      "matchId": 812193,
+      "home": "DC Wolfsölden 5 (1)",
+      "away": "1.DSV Reutlingen Big Six",
+      "opponent": "DC Wolfsölden 5 (1)",
+      "status": "OPEN",
+      "lastUpdate": "2026-07-29T12:46:27"
+    },
+    {
+      "day": 11,
+      "roundId": 94265,
+      "matchId": 812198,
+      "home": "SDC Wire Kings 1",
+      "away": "1.DSV Reutlingen Big Six",
+      "opponent": "SDC Wire Kings 1",
+      "status": "OPEN",
+      "lastUpdate": "2026-07-29T12:46:27"
+    },
+    {
+      "day": 12,
+      "roundId": 94266,
+      "matchId": 812203,
+      "home": "SG Reichenbach 2",
+      "away": "1.DSV Reutlingen Big Six",
+      "opponent": "SG Reichenbach 2",
+      "status": "OPEN",
+      "lastUpdate": "2026-07-29T12:46:27"
+    },
+    {
+      "day": 13,
+      "roundId": 94267,
+      "matchId": 812211,
+      "home": "1.DSV Reutlingen Big Six",
+      "away": "Jägerstüble",
+      "opponent": "Jägerstüble",
+      "status": "OPEN",
+      "lastUpdate": "2026-07-29T12:46:27"
+    },
+    {
+      "day": 14,
+      "status": "OFFEN"
+    },
+    {
+      "day": 15,
+      "roundId": 94269,
+      "matchId": 812218,
+      "home": "TSV Korntal 1",
+      "away": "1.DSV Reutlingen Big Six",
+      "opponent": "TSV Korntal 1",
+      "status": "OPEN",
+      "lastUpdate": "2026-07-29T12:46:27"
+    },
+    {
+      "day": 16,
+      "roundId": 94270,
+      "matchId": 812225,
+      "home": "DFO Bat Four",
+      "away": "1.DSV Reutlingen Big Six",
+      "opponent": "DFO Bat Four",
+      "status": "OPEN",
+      "lastUpdate": "2026-07-29T12:46:27"
+    },
+    {
+      "day": 17,
+      "roundId": 94271,
+      "matchId": 812229,
+      "home": "1.DSV Reutlingen Big Six",
+      "away": "TV Unterboihingen 1 Turtles",
+      "opponent": "TV Unterboihingen 1 Turtles",
+      "status": "OPEN",
+      "lastUpdate": "2026-09-10T16:39:52"
+    },
+    {
+      "day": 18,
+      "roundId": 94272,
+      "matchId": 812233,
+      "home": "Blackout´s 1",
+      "away": "1.DSV Reutlingen Big Six",
+      "opponent": "Blackout´s 1",
+      "status": "OPEN",
+      "lastUpdate": "2026-07-29T12:46:27"
+    }
+  ]
 }
