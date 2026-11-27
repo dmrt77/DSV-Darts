@@ -1,35 +1,29 @@
 name: 3K-Darts automatisch synchronisieren
- 
+
 "on":
   workflow_dispatch:
   schedule:
     - cron: '17 */6 * * *'
- 
+
 permissions:
   contents: write
- 
+
 concurrency:
   group: 3k-sync
   cancel-in-progress: false
- 
+
 jobs:
   sync:
     runs-on: ubuntu-latest
- 
     steps:
       - name: Repository laden
         uses: actions/checkout@v4
- 
       - name: Node.js einrichten
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
- 
+          node-version: '24'
       - name: 3K-Daten abrufen und berechnen
         run: node scripts/sync-3k.js
- 
-      - name: Aktualisierte Daten veröffentlichen
-        run: |
       - name: Aktualisierte Daten veröffentlichen
         run: |
           git config user.name "github-actions[bot]"
@@ -39,6 +33,5 @@ jobs:
             echo "Keine Änderungen"
             exit 0
           fi
-          
           git commit -m "3K-Daten automatisch aktualisiert"
           git push
